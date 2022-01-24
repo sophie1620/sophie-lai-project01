@@ -1,0 +1,84 @@
+// HEADING: font-family: 'Kumar One Outline', cursive;
+// Nav and Body: font-family: 'Lato', sans-serif;
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    color: $fontColor;
+}
+
+h1 {
+    font-family: $headingFont;
+    font-size: 1.1rem;
+    color: $fontColor;
+    line-height: 1.2rem;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: $headerFont;
+    font-size: 3.4rem;
+    color: $fontColor;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: $headingFont;
+    font-size: 1.65rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.105rem;
+    text-transform: uppercase;
+}
+
+p {
+    &.bodyText {
+        line-height: 1.6rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $fontColor;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    color: $fontColor;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.45rem;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+}
+
+a.findOutMore {
+    font-family: $headingFont;
+    font-size: 1rem;
+    color: $primary;
+    text-align: center;
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+button {
+    font-family: $headingFont;
+    font-size: 1rem;
+    color: $primary;
+    text-align: center;
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+    width: 100%;
+}

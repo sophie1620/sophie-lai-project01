@@ -22,3 +22,22 @@ a.findOutMore {
         border: 1px solid $quaternary;
     }
 }
+
+button {
+    background-color: $tertiary;
+    padding: 10px 0 10px;
+    border: 1px solid $tertiary;
+    &:hover {
+        color: $quaternary;
+        border: 1px solid $quaternary;
+    }
+    &:focus {
+        color: $quaternary;
+        border: 1px solid $quaternary;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

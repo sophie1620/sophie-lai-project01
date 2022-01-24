@@ -1,0 +1,43 @@
+header {
+    height: 100vh;
+    background: url(../sanctuary-helpers-final-images/header-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-attachment: fixed;
+    background-size: cover;
+}
+
+header .wrapper nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+ul.navBar {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    justify-content: space-between;
+} 
+
+.navBar li a {
+    border-bottom: 3px solid transparent;
+    &:hover,
+    &:focus {
+        border-bottom: 3px solid $quaternary;
+    }
+}
+
+h2 {
+    width: 50%;
+}
+
+.imgContainer {
+    position: relative;
+}
+
+header .imgContainer img {
+    position: absolute;
+    left: 0;
+    width: 55%;
+}

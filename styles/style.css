@@ -355,3 +355,89 @@ a.findOutMore:focus {
   color: #F8FB05;
   border: 1px solid #F8FB05;
 }
+
+button {
+  background-color: #065635;
+  padding: 10px 0 10px;
+  border: 1px solid #065635;
+}
+button:hover {
+  color: #F8FB05;
+  border: 1px solid #F8FB05;
+}
+button:focus {
+  color: #F8FB05;
+  border: 1px solid #F8FB05;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  height: 100vh;
+  background: url(../sanctuary-helpers-final-images/header-home.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header .wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+ul.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 45%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navBar li a {
+  border-bottom: 3px solid transparent;
+}
+.navBar li a:hover, .navBar li a:focus {
+  border-bottom: 3px solid #F8FB05;
+}
+
+h2 {
+  width: 50%;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+header .imgContainer img {
+  position: absolute;
+  left: 0;
+  width: 55%;
+}
+
+footer {
+  background-color: #151514;
+}
+
+footer p {
+  color: #F5F5F5;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0;
+}

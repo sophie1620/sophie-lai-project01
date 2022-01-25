@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1080px;
+    max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
@@ -40,4 +40,8 @@ button {
 img {
     max-width: 100%;
     display: block;
+}
+
+ul {
+    padding: 0;
 }

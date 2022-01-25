@@ -3,8 +3,9 @@ header {
     background: url(../sanctuary-helpers-final-images/header-home.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    // background-attachment: fixed;
     background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
 }
 
 header .wrapper nav {
@@ -32,12 +33,9 @@ h2 {
     width: 50%;
 }
 
-.imgContainer {
-    position: relative;
-}
-
-header .imgContainer img {
+header img {
     position: absolute;
     left: 0;
-    width: 55%;
+    bottom: -40px;
+    width: 54%;
 }

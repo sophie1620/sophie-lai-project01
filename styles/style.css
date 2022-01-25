@@ -336,7 +336,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1080px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
@@ -375,12 +375,18 @@ img {
   display: block;
 }
 
+ul {
+  padding: 0;
+}
+
 header {
   height: 100vh;
   background: url(../sanctuary-helpers-final-images/header-home.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
 }
 
 header .wrapper nav {
@@ -421,14 +427,112 @@ h2 {
   width: 50%;
 }
 
-.imgContainer {
+header img {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  width: 54%;
+}
+
+section {
+  padding: 80px 0 80px 0;
+}
+
+/* .materials section styling */
+section.materials {
+  padding-top: 30px;
+}
+
+.materials .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.materials .textContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 2 66.6%;
+          flex: 1 2 66.6%;
+}
+
+.materials .imgContainer {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 33.3%;
+          flex: 2 1 33.3%;
   position: relative;
 }
 
-header .imgContainer img {
+.materials .imgContainer img {
   position: absolute;
-  left: 0;
-  width: 55%;
+  right: 0;
+  top: 33px;
+  -webkit-box-shadow: -20px 20px #F8FB05;
+          box-shadow: -20px 20px #F8FB05;
+}
+
+/* .gallery section styling */
+section.gallery {
+  background-color: #E0FDDF;
+}
+
+ul.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul.gallery li {
+  width: calc((100% / 3) - 25px);
+}
+
+/* .links section styling */
+/* .programs section styling */
+/* .locations section styling */
+/* .banner section styling */
+.banner {
+  background-image: url(../sanctuary-helpers-final-images/banner-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 58vh;
+}
+
+/* .search section styling */
+.search .wrapper {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+}
+
+.search h3 {
+  text-align: center;
+}
+
+.search .findOutMore {
+  margin: 0 auto;
 }
 
 footer {

@@ -1,0 +1,81 @@
+section {
+    padding: 80px 0 80px 0;
+}
+
+/* .materials section styling */
+section.materials {
+    padding-top: 30px;
+}
+
+.materials .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.materials .textContainer {
+    flex: 1 2 66.6%;
+}
+
+.materials .imgContainer {
+    flex: 2 1 33.3%;
+    position: relative;
+}
+
+.materials .imgContainer img {
+    position: absolute;
+    right: 0;
+    top: 33px;
+    box-shadow: -20px 20px $quaternary;
+}
+
+/* .gallery section styling */
+section.gallery {
+    background-color: $secondary;
+}
+
+ul.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul.gallery li {
+    width: calc((100% / 3) - 25px);
+}
+
+
+
+/* .links section styling */
+
+/* .programs section styling */
+
+/* .locations section styling */
+
+/* .banner section styling */
+.banner {
+    background-image: url(../sanctuary-helpers-final-images/banner-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 58vh;
+}
+
+/* .search section styling */
+.search .wrapper {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.search h3 {
+    text-align: center;
+}
+
+.search .findOutMore {
+    margin: 0 auto;
+}
+
+

@@ -47,10 +47,98 @@ ul.gallery li {
 
 
 /* .links section styling */
+.links .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.links .textContainer {
+    width: calc(50% - 5px);
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: $quaternary;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.linksContainer p {
+    padding-left: 4rem;
+}
 
 /* .programs section styling */
+.programs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // border: 1px solid red;
+    background-color: $secondary;
+}
+
+.programs .imgContainer, 
+.programs .wrapper {
+    width: calc(50% - 100px);
+}
+
+.programs .imgContainer {
+    position: relative;
+}
+
+.programs img {
+    box-shadow: 20px 20px $quaternary;
+    position: absolute;
+    bottom: -20px;
+}
+
+.programs .wrapper {
+    margin-right: 0;
+}
+
+.programs .textContainer {
+    width:70%;
+}
 
 /* .locations section styling */
+.locations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // border: 1px solid red;
+    background-color: $secondary;
+    padding-top: 0;
+}
+
+.locations .imgContainer, 
+.locations .wrapper {
+    width: calc(50% - 100px);
+}
+
+.locations .imgContainer {
+    position: relative;
+}
+
+.locations img {
+    box-shadow: -20px 20px $quaternary;
+    position: absolute;
+    // bottom: -20px;
+}
+
+.locations .wrapper {
+    margin-right: 0;
+}
+
+.locations .textContainer {
+    width:70%;
+}
+
 
 /* .banner section styling */
 .banner {

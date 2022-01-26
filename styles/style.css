@@ -284,11 +284,18 @@ h3 {
   line-height: 2.9rem;
   letter-spacing: 0.105rem;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.links i {
+  font-size: 1.4rem;
+  line-height: 2.9rem;
 }
 
 p.bodyText {
   line-height: 1.6rem;
   letter-spacing: 0.1rem;
+  margin-top: 0;
 }
 
 a {
@@ -500,8 +507,124 @@ ul.gallery li {
 }
 
 /* .links section styling */
+.links .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.links .textContainer {
+  width: calc(50% - 5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #F8FB05;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.linksContainer p {
+  padding-left: 4rem;
+}
+
 /* .programs section styling */
+.programs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #E0FDDF;
+}
+
+.programs .imgContainer,
+.programs .wrapper {
+  width: calc(50% - 100px);
+}
+
+.programs .imgContainer {
+  position: relative;
+}
+
+.programs img {
+  -webkit-box-shadow: 20px 20px #F8FB05;
+          box-shadow: 20px 20px #F8FB05;
+  position: absolute;
+  bottom: -20px;
+}
+
+.programs .wrapper {
+  margin-right: 0;
+}
+
+.programs .textContainer {
+  width: 70%;
+}
+
 /* .locations section styling */
+.locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #E0FDDF;
+  padding-top: 0;
+}
+
+.locations .imgContainer,
+.locations .wrapper {
+  width: calc(50% - 100px);
+}
+
+.locations .imgContainer {
+  position: relative;
+}
+
+.locations img {
+  -webkit-box-shadow: -20px 20px #F8FB05;
+          box-shadow: -20px 20px #F8FB05;
+  position: absolute;
+}
+
+.locations .wrapper {
+  margin-right: 0;
+}
+
+.locations .textContainer {
+  width: 70%;
+}
+
 /* .banner section styling */
 .banner {
   background-image: url(../sanctuary-helpers-final-images/banner-image.jpg);

@@ -12,14 +12,86 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
+    <!-- header section -->
+    <header class="contactHeader">
+        <div class="wrapper">
+            <!-- nav bar -->
+            <nav>
+                <h1>Sanctuary Helpers</h1>
+                <ul class="navBar">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h2>Get in Touch</h2>
+        </div> <!-- .wrapper ends -->
+        <!-- <div class="imgContainer"> -->
+        </div>
+    </header>
     
+
+    <main>
+        <section class="contact">
+            <div class="wrapper">
+                <!-- form for collecting messages -->
+                <form action="">
+                    <div class="nameEmail">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="name">
+                        
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="email" id="email" placeholder="email">
+                    </div>
+                    
+                    <label for="message" class="sr-only">Input message here</label>
+                    <input type="text" name="message" id="message" placeholder="message">
+                    
+                    <button type="submit">Submit</button>
+                </form>
+                
+                <!-- Social contact section -->
+                <div class="textContainer">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </li>
+                    </ul>
+                    <div class="address">
+                        <p class="bodyText">
+                            <span class="email">info@email.com</span>
+                            <span>123-456-7890</span>
+                            <span>123 Queen Street West</span>
+                            <span>Unit 10</span>
+                            <span>Toronto, Ontario</span>
+                            <span>M5V2D5</span>
+                        </p>
+                    </div>
+                </div> <!-- end of .textContainer -->
+            </div> <!-- end of .wrapper -->
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p class="bodyText">Copyright © 2019 HackerYou </p>
+    </footer>
 </body>
 </html>

@@ -1,4 +1,5 @@
-header {
+/* home page header */
+header.homeHeader {
     height: 100vh;
     background: url(../sanctuary-helpers-final-images/header-home.jpg);
     background-repeat: no-repeat;
@@ -8,7 +9,7 @@ header {
     margin-bottom: 50px;
 }
 
-header .wrapper nav {
+header.homeHeader .wrapper nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -38,4 +39,27 @@ header img {
     left: 0;
     bottom: -40px;
     width: 54%;
+}
+
+/* contact page header */
+.contactHeader h1 {
+    font-family: $headingFont;
+    width: 25%;
+    // border: 1px solid red;
+}
+
+header.contactHeader {
+    height: 50vh;
+    background: url(../sanctuary-helpers-final-images/contact-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // position: relative;
+    // margin-bottom: 50px;
+}
+
+header.contactHeader .wrapper nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

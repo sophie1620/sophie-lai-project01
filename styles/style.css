@@ -386,7 +386,8 @@ ul {
   padding: 0;
 }
 
-header {
+/* home page header */
+header.homeHeader {
   height: 100vh;
   background: url(../sanctuary-helpers-final-images/header-home.jpg);
   background-repeat: no-repeat;
@@ -396,7 +397,7 @@ header {
   margin-bottom: 50px;
 }
 
-header .wrapper nav {
+header.homeHeader .wrapper nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,10 +442,38 @@ header img {
   width: 54%;
 }
 
+/* contact page header */
+.contactHeader h1 {
+  font-family: "Kumar One", cursive;
+  width: 25%;
+}
+
+header.contactHeader {
+  height: 50vh;
+  background: url(../sanctuary-helpers-final-images/contact-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header.contactHeader .wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 section {
   padding: 80px 0 80px 0;
 }
 
+/* styling for home page */
 /* .materials section styling */
 section.materials {
   padding-top: 30px;
@@ -475,7 +504,6 @@ section.materials {
           flex: 2 1 33.3%;
   position: relative;
 }
-
 .materials .imgContainer img {
   position: absolute;
   right: 0;
@@ -501,7 +529,6 @@ ul.gallery {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 ul.gallery li {
   width: calc((100% / 3) - 25px);
 }
@@ -649,19 +676,47 @@ ul.gallery li {
           justify-content: center;
   padding-bottom: 80px;
 }
-
-.search h3 {
+.search .wrapper h3 {
   text-align: center;
 }
-
-.search .findOutMore {
+.search .wrapper .findOutMore {
   margin: 0 auto;
+}
+
+/* styling for contact page */
+section.contact {
+  background-color: #E0FDDF;
+}
+section.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .textContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.address span {
+  display: block;
 }
 
 footer {
   background-color: #151514;
 }
-
 footer p {
   color: #F5F5F5;
   text-align: center;

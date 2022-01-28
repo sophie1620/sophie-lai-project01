@@ -436,9 +436,9 @@ h2 {
 }
 
 header img {
-  position: absolute;
+  position: relative;
   left: 0;
-  bottom: -40px;
+  bottom: -20px;
   width: 54%;
 }
 
@@ -475,10 +475,6 @@ section {
 
 /* styling for home page */
 /* .materials section styling */
-section.materials {
-  padding-top: 30px;
-}
-
 .materials .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,7 +582,9 @@ ul.gallery li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 20px;
   background-color: #E0FDDF;
+  position: relative;
 }
 
 .programs .imgContainer,
@@ -595,14 +593,17 @@ ul.gallery li {
 }
 
 .programs .imgContainer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+}
+
+.programs .textContainer {
+  min-height: calc(58px + 128px + 58px);
 }
 
 .programs img {
   -webkit-box-shadow: 20px 20px #F8FB05;
           box-shadow: 20px 20px #F8FB05;
-  position: absolute;
-  bottom: -20px;
 }
 
 .programs .wrapper {
@@ -611,6 +612,7 @@ ul.gallery li {
 
 .programs .textContainer {
   width: 70%;
+  min-height: calc(116px + 128px);
 }
 
 /* .locations section styling */
@@ -626,7 +628,7 @@ ul.gallery li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #E0FDDF;
-  padding-top: 0;
+  padding: 20px 0 0 0;
 }
 
 .locations .imgContainer,
@@ -636,12 +638,14 @@ ul.gallery li {
 
 .locations .imgContainer {
   position: relative;
+  right: 0;
 }
 
 .locations img {
   -webkit-box-shadow: -20px 20px #F8FB05;
           box-shadow: -20px 20px #F8FB05;
-  position: absolute;
+  position: relative;
+  bottom: -45px;
 }
 
 .locations .wrapper {
@@ -650,6 +654,10 @@ ul.gallery li {
 
 .locations .textContainer {
   width: 70%;
+  text-align: right;
+  min-height: calc(116px + 128px);
+  position: relative;
+  top: 60px;
 }
 
 /* .banner section styling */
@@ -712,6 +720,48 @@ section.contact .wrapper {
 
 .address span {
   display: block;
+}
+
+form {
+  width: 66.6%;
+}
+form .nameEmail {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form .nameEmail input {
+  width: 48%;
+  border: none;
+  padding: 0 0 15px 10px;
+}
+
+.contact ::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.contact ::-moz-placeholder {
+  text-transform: uppercase;
+}
+
+.contact :-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.contact ::-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.contact ::placeholder {
+  text-transform: uppercase;
 }
 
 footer {

@@ -4,10 +4,6 @@ section {
 
 /* styling for home page */
 /* .materials section styling */
-section.materials {
-    padding-top: 30px;
-}
-
 .materials .wrapper{
     display: flex;
     flex-direction: row;
@@ -78,7 +74,9 @@ ul.gallery {
     flex-direction: row;
     justify-content: space-between;
     // border: 1px solid red;
+    padding-bottom: 20px;
     background-color: $secondary;
+    position: relative;
 }
 
 .programs .imgContainer, 
@@ -87,13 +85,18 @@ ul.gallery {
 }
 
 .programs .imgContainer {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+}
+
+.programs .textContainer {
+    min-height: calc(58px + 128px + 58px);
 }
 
 .programs img {
     box-shadow: 20px 20px $quaternary;
-    position: absolute;
-    bottom: -20px;
+    // position: relative;
+    // bottom: 80px;
 }
 
 .programs .wrapper {
@@ -102,6 +105,7 @@ ul.gallery {
 
 .programs .textContainer {
     width:70%;
+    min-height: calc(116px + 128px);
 }
 
 /* .locations section styling */
@@ -111,7 +115,7 @@ ul.gallery {
     justify-content: space-between;
     // border: 1px solid red;
     background-color: $secondary;
-    padding-top: 0;
+    padding: 20px 0 0 0;
 }
 
 .locations .imgContainer, 
@@ -121,12 +125,13 @@ ul.gallery {
 
 .locations .imgContainer {
     position: relative;
+    right: 0;
 }
 
 .locations img {
     box-shadow: -20px 20px $quaternary;
-    position: absolute;
-    // bottom: -20px;
+    position: relative;
+    bottom: -45px;
 }
 
 .locations .wrapper {
@@ -135,6 +140,10 @@ ul.gallery {
 
 .locations .textContainer {
     width:70%;
+    text-align: right;
+    min-height: calc(116px + 128px);
+    position: relative;
+    top: 60px;
 }
 
 
@@ -182,4 +191,27 @@ section.contact {
 
 .address span {
     display: block;
+}
+
+form {
+    // border: 1px solid green;
+    width: 66.6%;
+
+    .nameEmail {
+        width: 100%;
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        input {
+            width: 48%;
+            border: none;
+            padding: 0 0 15px 10px;
+        }
+    }
+}
+
+.contact ::placeholder {
+    text-transform: uppercase;
 }

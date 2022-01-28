@@ -187,31 +187,19 @@ section.contact {
 .contact .textContainer ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+    // border: 1px solid red;
 }
 
 .address span {
     display: block;
-}
-
-form {
-    // border: 1px solid green;
-    width: 66.6%;
-
-    .nameEmail {
-        width: 100%;
-        // border: 1px solid red;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        input {
-            width: 48%;
-            border: none;
-            padding: 0 0 15px 10px;
-        }
+    &.email {
+        margin-bottom: 20px;
     }
 }
 
-.contact ::placeholder {
-    text-transform: uppercase;
+.contact form {
+    position: relative;
+    top: -230px;
 }

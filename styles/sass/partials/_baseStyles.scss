@@ -30,6 +30,7 @@ button {
     background-color: $tertiary;
     padding: 10px 0 10px;
     border: 1px solid $tertiary;
+    text-transform: uppercase;
     &:hover {
         color: $quaternary;
         border: 1px solid $quaternary;

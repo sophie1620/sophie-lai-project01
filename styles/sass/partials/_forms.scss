@@ -1,0 +1,45 @@
+/* form styling in contact.html */
+
+form {
+    // border: 1px solid green;
+    width: 70%;
+    background-color: $primary;
+    padding: 80px 50px 50px 50px;
+    box-shadow: 20px 20px $quaternary;
+
+
+    .nameEmail {
+        width: 100%;
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        input {
+            width: 48%;
+            border: none;
+            border-bottom: 1px solid $tertiary;
+            padding: 15px 10px 15px 10px;
+            background-color: $primary;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.contact ::placeholder {
+    text-transform: uppercase;
+    color: rgba($color: $fontColor, $alpha: 1);
+}
+
+.contact textarea {
+    resize: none;
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    background-color: $primary;
+    border: 1px solid $tertiary;
+    margin-bottom: 50px;
+}
+
+
+

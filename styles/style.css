@@ -349,16 +349,16 @@ body {
 }
 
 /* .findOutMore styling */
-a.findOutMore {
+a.moreInfo {
   background-color: #065635;
   padding: 10px 20px;
   border: 1px solid #065635;
 }
-a.findOutMore:hover {
+a.moreInfo:hover {
   color: #F8FB05;
   border: 1px solid #F8FB05;
 }
-a.findOutMore:focus {
+a.moreInfo:focus {
   color: #F8FB05;
   border: 1px solid #F8FB05;
 }

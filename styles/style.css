@@ -348,8 +348,11 @@ body {
   margin: 0 auto;
 }
 
-/* .findOutMore styling */
+/* .moreInfo styling */
 a.moreInfo {
+  font-family: "Kumar One", cursive;
+  color: #F5F5F5;
+  text-transform: uppercase;
   background-color: #065635;
   padding: 10px 20px;
   border: 1px solid #065635;

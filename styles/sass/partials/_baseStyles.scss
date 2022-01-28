@@ -8,8 +8,11 @@ body {
     margin: 0 auto;
 }
 
-/* .findOutMore styling */
+/* .moreInfo styling */
 a.moreInfo {
+    font-family: $headingFont;
+    color: $primary;
+    text-transform: uppercase;
     background-color: $tertiary;
     padding: 10px 20px;
     border: 1px solid $tertiary;

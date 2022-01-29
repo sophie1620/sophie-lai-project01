@@ -19,6 +19,135 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
+    <!-- header section -->
+    <header class="blogHeader">
+        <div class="wrapper">
+            <!-- nav bar -->
+            <nav>
+                <h1 class="logo">Sanctuary Helpers</h1>
+                <ul class="navBar">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h2>Blog</h2>
+        </div> <!-- .wrapper ends -->
+        <!-- <div class="imgContainer"> -->
+        </div>
+    </header>
+
+    <main>
+        <div class="blogMain">
+
+            <!-- blog post -->
+            <div class="blogPost">
+                <article>   
+                    <div class="imgContainer">
+                        <img src="./sanctuary-helpers-final-images/blog-post-image.jpg" alt="">
+                    </div>
+                    <div class="wrapper">
+                        <div class="textContainer">
+                            <h3>Finding the Right Pieces for New Space</h3>
+                            <p>Monday, October 5th, 2019 by <span class="author">Saron</span></p>
+                            <!-- why is the font-family for this section not listed in the style sheet? -->
+                            
+                            <p class="bodyText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quae perferendis ullam reprehenderit ipsam dolores distinctio? Laboriosam sunt animi iste amet necessitatibus corporis ad vel beatae, ipsum ipsam quibusdam vitae recusandae quis, error odit ratione et!</p>
+                            
+                            <p class="bodyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facere ut reprehenderit praesentium harum. Blanditiis molestiae dolor reiciendis modi voluptatum quibusdam perspiciatis unde enim nesciunt repellat aperiam soluta ipsum eos, voluptates placeat officia sapiente amet totam iusto et nostrum! Adipisci nesciunt dolore itaque ad consequatur magnam!</p>
+                            
+                            <p class="bodyText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero assumenda perspiciatis provident magni sit consectetur aliquid odio totam dolore cum, minima dolor reprehenderit temporibus reiciendis est tenetur alias voluptatibus maiores quisquam, magnam enim. Similique eos sit ab, quasi sint, velit tenetur vel harum itaque iusto exercitationem eligendi ut? Quasi sit quam eum repellendus commodi vitae pariatur! Ut corporis aperiam repellat accusantium culpa, doloremque nihil? Repudiandae possimus magnam inventore hic ipsam?</p>
+                            <p class="bodyText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum distinctio commodi nostrum aperiam ducimus fugiat, voluptatem dolorum tempora ratione laborum est impedit beatae!</p>
+                        </div> 
+                    </div> <!-- end of .wrapper -->
+                </article>
+                
+                
+                
+                <!-- comments section -->
+                <section class="comments">
+                    <div class="wrapper">
+                        <div class="commentContainer">
+                            <h3>Comments:</h3>
+                            <div class="comment">
+                                <div class="imgContainer">
+                                    <img src="./sanctuary-helpers-final-images/comment-image.jpg" alt="Profile picture of a male commentor">
+                                </div>
+                                <div class="textContainer">
+                                    <p class="date">Tuesday October 9th, 2019 by Davin</p>
+                                    <p class="bodyText">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto dolorum incidunt minus nisi ipsa ducimus suscipit odio dolores amet? Sed suscipit veniam amet temporibus maiores, dolore beatae officiis facilis cupiditate similique commodi!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentContainer">
+                            <div class="comment">
+                                <div class="imgContainer">
+                                    <img src="./sanctuary-helpers-final-images/comment-image2.jpg" alt="Default profile picture of two zebras">
+                                </div>
+                                <div class="textContainer">
+                                    <p class="date">Wednesday October 10th, 2019 by Lisa</p>
+                                    <p class="bodyText">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure a optio reprehenderit atque molestias aperiam saepe est magni.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> <!-- end of .wrapper -->
+                </section>
+                
+                <!-- forms section to collect comments -->
+                <section class="commentForm">
+                    <div class="wrapper">
+                        <!-- form for collecting messages -->
+                        <form action="" class="commentForm">
+                            <div class="nameEmail">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" id="name" placeholder="name">
+                                
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" placeholder="email">
+                            </div>
+                            
+                            <label for="comment" class="sr-only">Input message here</label>
+                            <textarea name="comment" id="comment" placeholder="comment"></textarea>
+                            
+                            <button type="submit postComment">post comment</button>
+                        </form>
+                    </div> <!-- end of .wrapper -->
+                </section>
+            </div> <!-- end of .blogPost-->
+            
+            <!-- aside section to the right -->
+            <aside>
+                <div class="imgContainer">
+                    <img src="./sanctuary-helpers-final-images/sidebar-image.jpg" alt="Cool geometric ceiling light fixture">
+                </div>
+                <div class="textContainer">
+                    <h4>Our Mission</h4>
+                    <p class="bodyText">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab maxime eaque molestias!
+                        <a href="#">Find out more.</a>
+                    </p>
+                    <h4>Recent posts</h4>
+                    <ul class="aside">
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+            </aside>
+        </div> <!-- end of .blogMain -->
+    </main>
+        
+        <!-- footer -->
+        <footer>
+            <p class="bodyText">Copyright © 2019 HackerYou </p>
+        </footer>
     
 </body>
 </html>

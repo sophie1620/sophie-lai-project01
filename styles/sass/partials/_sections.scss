@@ -176,11 +176,13 @@ ul.gallery {
 /* styling for contact page */
 section.contact {
     background-color: $secondary;
-
+    height: calc(100% - 65vh);
+    padding: 0;
     .wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 80px;
     }
 }
 
@@ -203,3 +205,32 @@ section.contact {
     position: relative;
     top: -230px;
 }
+
+/* styling for blog page */
+
+
+// /* comments section */
+// section.comments {
+//     background-color: $secondary;
+//     // border: 1px solid green;
+//     padding-top: 0;
+// }
+
+// .commentContainer {
+//     width: 70%;
+//     // border: 1px solid red;
+// }
+
+// /* comment form section */
+// section.commentForm {
+//     background-color: $secondary;
+//     height: calc(100% - 65vh);
+//     padding: 0 0 100px 0;
+//     // border: 1px solid rebeccapurple;
+//     .wrapper {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         // padding-top: 80px;
+//     }
+// }

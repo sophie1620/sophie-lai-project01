@@ -41,25 +41,43 @@ header img {
     width: 54%;
 }
 
-/* contact page header */
-.contactHeader h1 {
-    font-family: $headingFont;
-    width: 25%;
-    // border: 1px solid red;
-}
-
+/* contact page background image styling */
 header.contactHeader {
-    height: 70vh;
+    height: 65vh;
     background: url(../sanctuary-helpers-final-images/contact-image.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
     background-size: cover;
     // position: relative;
     // margin-bottom: 50px;
 }
 
-header.contactHeader .wrapper nav {
+/* blog page background image styling */
+header.blogHeader {
+    height: 65vh;
+    background: url(../sanctuary-helpers-final-images/blog-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* common header styling for contact and blog page */
+header.contactHeader .wrapper nav, 
+header.blogHeader .wrapper nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+    /* .logo h1 */
+.contactHeader h1, 
+.blogHeader h1 {
+    font-family: $headingFont;
+    width: 25%;
+    margin-top: 15px;
+}
+
+.contactHeader h2,
+.blogHeader h2 {
+    margin-top: 100px;
 }

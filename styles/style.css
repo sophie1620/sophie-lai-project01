@@ -287,6 +287,15 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-family: "Kumar One", cursive;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.105rem;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
 .links i {
   font-size: 1.4rem;
   line-height: 2.9rem;
@@ -296,6 +305,14 @@ p.bodyText {
   line-height: 1.6rem;
   letter-spacing: 0.1rem;
   margin-top: 0;
+}
+p.date {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+p span.author {
+  font-style: italic;
+  font-weight: 700;
 }
 
 a {
@@ -336,6 +353,13 @@ button {
   line-height: 1.6rem;
   letter-spacing: 0.05rem;
   width: 100%;
+}
+
+ul.aside li {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0;
 }
 
 body {
@@ -446,21 +470,27 @@ header img {
   width: 54%;
 }
 
-/* contact page header */
-.contactHeader h1 {
-  font-family: "Kumar One", cursive;
-  width: 25%;
+/* contact page background image styling */
+header.contactHeader {
+  height: 65vh;
+  background: url(../sanctuary-helpers-final-images/contact-image.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
 }
 
-header.contactHeader {
-  height: 70vh;
-  background: url(../sanctuary-helpers-final-images/contact-image.jpg);
+/* blog page background image styling */
+header.blogHeader {
+  height: 65vh;
+  background: url(../sanctuary-helpers-final-images/blog-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-header.contactHeader .wrapper nav {
+/* common header styling for contact and blog page */
+header.contactHeader .wrapper nav,
+header.blogHeader .wrapper nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,6 +501,55 @@ header.contactHeader .wrapper nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+/* .logo h1 */
+.contactHeader h1,
+.blogHeader h1 {
+  font-family: "Kumar One", cursive;
+  width: 25%;
+  margin-top: 15px;
+}
+
+.contactHeader h2,
+.blogHeader h2 {
+  margin-top: 100px;
+}
+
+.blogMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #E0FDDF;
+}
+
+.blogPost {
+  width: 60%;
+  border: 1px solid red;
+  position: relative;
+  top: -150px;
+}
+.blogPost .wrapper {
+  border: 1px solid green;
+  margin-right: 0;
+  margin-left: 15%;
+  width: 85%;
+}
+
+aside {
+  width: calc(25% + 20px);
+  border: 1px solid green;
+  position: relative;
+  right: 0;
+}
+aside .textContainer {
+  border: 1px solid blue;
+}
+aside .textContainer ul {
+  border: 1px solid rebeccapurple;
 }
 
 section {
@@ -698,6 +777,8 @@ ul.gallery li {
 /* styling for contact page */
 section.contact {
   background-color: #E0FDDF;
+  height: calc(100% - 65vh);
+  padding: 0;
 }
 section.contact .wrapper {
   display: -webkit-box;
@@ -710,6 +791,7 @@ section.contact .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 80px;
 }
 
 .contact .textContainer ul {
@@ -738,15 +820,16 @@ section.contact .wrapper {
   top: -230px;
 }
 
+/* styling for blog page */
 /* form styling in contact.html */
-form {
+form.messageForm {
   width: 70%;
   background-color: #F5F5F5;
   padding: 80px 50px 50px 50px;
   -webkit-box-shadow: 20px 20px #F8FB05;
           box-shadow: 20px 20px #F8FB05;
 }
-form .nameEmail {
+form.messageForm .nameEmail {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,7 +842,7 @@ form .nameEmail {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-form .nameEmail input {
+form.messageForm .nameEmail input {
   width: 48%;
   border: none;
   border-bottom: 1px solid #065635;
@@ -768,39 +851,74 @@ form .nameEmail input {
   margin-bottom: 50px;
 }
 
-.contact ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   text-transform: uppercase;
   color: #151514;
 }
 
-.contact ::-moz-placeholder {
+::-moz-placeholder {
   text-transform: uppercase;
   color: #151514;
 }
 
-.contact :-ms-input-placeholder {
+:-ms-input-placeholder {
   text-transform: uppercase;
   color: #151514;
 }
 
-.contact ::-ms-input-placeholder {
+::-ms-input-placeholder {
   text-transform: uppercase;
   color: #151514;
 }
 
-.contact ::placeholder {
+::placeholder {
   text-transform: uppercase;
   color: #151514;
 }
 
-.contact textarea {
+textarea {
   resize: none;
   width: 100%;
   height: 250px;
   padding: 30px;
-  background-color: #F5F5F5;
   border: 1px solid #065635;
   margin-bottom: 50px;
+}
+
+.messageForm textarea {
+  background-color: #F5F5F5;
+}
+
+/* stylistic changes for .commentForm */
+form.commentForm {
+  border: 1px solid pink;
+  width: 100%;
+  background-color: #E0FDDF;
+}
+form.commentForm .nameEmail {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form.commentForm .nameEmail input {
+  width: 48%;
+  border: none;
+  border-bottom: 1px solid #065635;
+  padding: 15px 10px 15px 10px;
+  background-color: #E0FDDF;
+  margin-bottom: 50px;
+}
+
+.commentForm textarea {
+  background-color: #E0FDDF;
 }
 
 footer {

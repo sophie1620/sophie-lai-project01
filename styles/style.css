@@ -528,28 +528,48 @@ header.blogHeader .wrapper nav {
 
 .blogPost {
   width: 60%;
-  border: 1px solid red;
   position: relative;
   top: -150px;
 }
+.blogPost .blueCouch {
+  -webkit-box-shadow: 20px 20px #F8FB05;
+          box-shadow: 20px 20px #F8FB05;
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+}
 .blogPost .wrapper {
-  border: 1px solid green;
   margin-right: 0;
   margin-left: 15%;
   width: 85%;
 }
+.blogPost .textContainer {
+  padding-right: 50px;
+}
+
+article {
+  background-color: #F5F5F5;
+  border-bottom: 10px solid #F8FB05;
+  border-right: 10px solid #F8FB05;
+}
 
 aside {
   width: calc(25% + 20px);
-  border: 1px solid green;
   position: relative;
   right: 0;
+  top: 100px;
+}
+aside .imgContainer img {
+  -webkit-box-shadow: -20px 20px #F8FB05;
+          box-shadow: -20px 20px #F8FB05;
+  margin-left: 20px;
 }
 aside .textContainer {
-  border: 1px solid blue;
+  background-color: #F8FB05;
+  padding: 5px 0 10px 20px;
 }
 aside .textContainer ul {
-  border: 1px solid rebeccapurple;
+  list-style-type: disc;
+  padding-left: 30px;
 }
 
 section {
@@ -821,6 +841,33 @@ section.contact .wrapper {
 }
 
 /* styling for blog page */
+section.comments {
+  padding-bottom: 0;
+}
+
+.commentContainer {
+  width: 100%;
+}
+.commentContainer .commentPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.commentContainer .commentPost .imgContainer {
+  padding-top: 20px;
+}
+.commentContainer .commentPost .textContainer {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
 /* form styling in contact.html */
 form.messageForm {
   width: 70%;
@@ -854,26 +901,36 @@ form.messageForm .nameEmail input {
 ::-webkit-input-placeholder {
   text-transform: uppercase;
   color: #151514;
+  opacity: 1;
+  letter-spacing: 0.1rem;
 }
 
 ::-moz-placeholder {
   text-transform: uppercase;
   color: #151514;
+  opacity: 1;
+  letter-spacing: 0.1rem;
 }
 
 :-ms-input-placeholder {
   text-transform: uppercase;
   color: #151514;
+  opacity: 1;
+  letter-spacing: 0.1rem;
 }
 
 ::-ms-input-placeholder {
   text-transform: uppercase;
   color: #151514;
+  opacity: 1;
+  letter-spacing: 0.1rem;
 }
 
 ::placeholder {
   text-transform: uppercase;
   color: #151514;
+  opacity: 1;
+  letter-spacing: 0.1rem;
 }
 
 textarea {
@@ -891,7 +948,6 @@ textarea {
 
 /* stylistic changes for .commentForm */
 form.commentForm {
-  border: 1px solid pink;
   width: 100%;
   background-color: #E0FDDF;
 }

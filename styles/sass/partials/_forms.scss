@@ -28,6 +28,8 @@ form.messageForm {
 ::placeholder {
     text-transform: uppercase;
     color: rgba($color: $fontColor, $alpha: 1);
+    opacity: 1;
+    letter-spacing: 0.1rem;
 }
 
 textarea {
@@ -45,7 +47,7 @@ textarea {
 
 /* stylistic changes for .commentForm */
 form.commentForm {
-    border: 1px solid pink;
+    // border: 1px solid pink;
     width: 100%;
     background-color: $secondary;
     // padding: 10px 50px 10px 0px;

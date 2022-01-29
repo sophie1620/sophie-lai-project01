@@ -208,29 +208,31 @@ section.contact {
 
 /* styling for blog page */
 
-
 // /* comments section */
-// section.comments {
-//     background-color: $secondary;
-//     // border: 1px solid green;
-//     padding-top: 0;
-// }
+section.comments {
+    padding-bottom: 0;
+}
 
-// .commentContainer {
-//     width: 70%;
-//     // border: 1px solid red;
-// }
+.commentContainer {
+    width: 100%;
+    // border: 1px solid red;
 
-// /* comment form section */
-// section.commentForm {
-//     background-color: $secondary;
-//     height: calc(100% - 65vh);
-//     padding: 0 0 100px 0;
-//     // border: 1px solid rebeccapurple;
-//     .wrapper {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
-//         // padding-top: 80px;
-//     }
-// }
+    .commentPost {
+        // border: 1px solid olivedrab;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .imgContainer {
+            // border: 2px solid black;
+            padding-top: 20px;
+            
+        }
+
+        .textContainer {
+            // border: 1px solid red;
+            flex-basis: 80%;
+        }
+    }
+}
+

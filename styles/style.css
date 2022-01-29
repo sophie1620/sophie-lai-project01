@@ -633,7 +633,7 @@ ul.gallery li {
 }
 
 /* .links section styling */
-.links .wrapper {
+.links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,14 +641,13 @@ ul.gallery li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
-
-.links .textContainer {
+.links ul li {
   width: calc(50% - 5px);
   display: -webkit-box;
   display: -ms-flexbox;

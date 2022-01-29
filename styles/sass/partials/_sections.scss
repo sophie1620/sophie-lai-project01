@@ -41,17 +41,17 @@ ul.gallery {
 }
 
 /* .links section styling */
-.links .wrapper {
+.links ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
-}
+    justify-content: space-between;
 
-.links .textContainer {
+    li {
     width: calc(50% - 5px);
     display: flex;
     flex-direction: column;
+    }
 }
 
 .icon {

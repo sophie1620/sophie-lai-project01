@@ -1,11 +1,9 @@
 /* home page header */
 header.homeHeader {
-    height: 100vh;
     background: url(../sanctuary-helpers-final-images/header-home.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    background-position: center top;
+    background-size: 100%;
     margin-bottom: 50px;
 }
 
@@ -31,14 +29,16 @@ ul.navBar {
 }
 
 h2 {
-    width: 50%;
+    width: 50vw;
+    padding-left: 12%;
+    // border: 1px solid red;
 }
 
 header img {
     position: relative;
     left: 0;
-    bottom: -20px;
-    width: 54%;
+    bottom: -50px;
+    width: 55%;
 }
 
 /* contact page background image styling */
@@ -46,10 +46,10 @@ header.contactHeader {
     height: 65vh;
     background: url(../sanctuary-helpers-final-images/contact-image.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center top;
     background-size: cover;
-    // position: relative;
-    // margin-bottom: 50px;
+    // background-color: $secondary;
+    // border: 1px solid red;
 }
 
 /* blog page background image styling */
@@ -57,8 +57,9 @@ header.blogHeader {
     height: 65vh;
     background: url(../sanctuary-helpers-final-images/blog-image.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: cover;
+    // background-color: $secondary;
 }
 
 /* common header styling for contact and blog page */

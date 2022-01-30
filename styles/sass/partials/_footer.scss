@@ -4,6 +4,9 @@ footer {
         color: $primary;
         text-align: center;
         padding: 5px 0;
-        margin: 0;
+        // margin: 0;
+        &.bodyText {
+            margin-bottom: 0;
+        }
     }
 }

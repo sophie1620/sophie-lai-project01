@@ -26,6 +26,7 @@ h2 {
     color: $fontColor;
     line-height: 3.2rem;
     text-transform: uppercase;
+    margin: 0;
 }
 
 h3 {
@@ -57,6 +58,7 @@ p {
         line-height: 1.6rem;
         letter-spacing: 0.1rem;
         margin-top: 0;
+        margin-bottom: 30px;
     }
     &.date {
         text-transform: uppercase;

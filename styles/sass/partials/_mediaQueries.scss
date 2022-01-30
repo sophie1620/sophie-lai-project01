@@ -1,0 +1,193 @@
+// breakpoints: (responsive for wide screens?  @ 1400px?), 
+
+
+@media (max-width: 1400px) {
+    /* styling for header in contact.html and blog.html */
+    header.contactHeader,
+    header.blogHeader {
+        height: 45vh;
+    }
+
+    /* styling for index.html */
+    .locations .wrapper {
+        padding-bottom: 150px;
+    }
+
+    .contact .textContainer {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 1100px) {
+/* styling for header */
+    .homeHeader h2 {
+        width: 60vw;
+        background-color: rgba($color: $primary, $alpha: 0.8);
+        padding-top: 15px;
+    }
+
+    header img {
+        bottom: 0;
+    }
+
+    header.contactHeader, 
+    header.blogHeader {
+        height: 40vh;
+    }
+
+    /* styling for contact.html */ 
+    .contact form {
+        position: static;
+    }
+
+    .contact .wrapper {
+        align-items: center;
+    }
+
+    /* styling for blog.html */
+    .blogPost {
+        position: static;
+    }
+    .comments .wrapper, 
+    .commentForm .wrapper {
+        width: 80vw;
+        // border: 1px solid blue;
+    }
+} /* end for max-width 1100px */
+
+@media (max-width: 810px) {
+    section {
+        padding: 60px 0 60px 0;
+    }
+    /* typography changes */
+    h2 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    p {
+        &.bodyText {
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+        }
+    }
+    /* styling for index.html */
+    .homeHeader h2 {
+        width: 70%;
+        background-color: rgba($color: $primary, $alpha: 0.8);
+        padding-top: 15px;
+    }
+
+    header img {
+        width: 50%;
+        bottom: 0;
+    }
+
+    header.homeHeader {
+        margin-bottom: 0;
+    }
+
+    .links ul {
+        flex-direction: column;
+
+        li {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+        /* styling .programs and .locations together */
+    .programs, 
+    .locations {
+        flex-direction: column;
+
+        .imgContainer {
+            position: static;
+            width: 80%;
+            margin: 0 auto 60px;
+        }
+
+        .wrapper {
+            width: 80%;
+            padding: 0;
+
+            .textContainer {
+                text-align: center;
+            }
+        }
+    }
+
+    .programs .wrapper {
+        padding-bottom: 0;
+
+        .textContainer {
+            padding-bottom: 0;
+        };
+    }
+
+    .locations {
+        flex-direction: column-reverse;
+        padding-top: 0;
+
+        .wrapper {
+            padding-bottom: 60px;
+        }
+    }
+
+    .banner {
+        height: 40vh;
+    }
+
+    /* header styling for contact.html and blog.html */
+    header.contactHeader, 
+    header.blogHeader {
+        height: 30vh;
+    }
+
+    /* styling for contact.html */
+    section.contact .wrapper {
+        flex-direction: column;
+    }
+
+    .contact form {
+        position: static;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    form.messageForm {
+        padding-top: 40px;
+    }
+
+    .contact .textContainer {
+        padding-top: 60px;
+    }
+
+    /* styling for blog.html */
+
+} /* end of max-width 810px */
+
+
+
+
+
+@media (max-width: 320px) {
+    h2 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding-left: 0;
+        position: relative;
+        bottom: 3rem;
+        background-color: rgba($color: $primary, $alpha: 0.8);
+        padding: 10px;
+    }
+
+    header img {
+        bottom: 0px;
+    }    
+}

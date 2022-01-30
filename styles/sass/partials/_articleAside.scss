@@ -23,7 +23,7 @@
     }
 
     .textContainer {
-        padding-right: 50px;
+        padding: 20px 50px 0 0;
         // border: 1px solid maroon;
     }
 }
@@ -36,10 +36,7 @@ article {
 
 aside {
     width: calc(25% + 20px);
-    // border: 1px solid green;
-    position: relative;
-    right: 0;
-    top: 100px;
+    margin-top: 100px;
 
     .imgContainer {
         img {
@@ -51,34 +48,13 @@ aside {
     .textContainer {
         // border: 1px solid blue;
         background-color: $quaternary;
-        padding: 5px 0 10px 20px;
+        padding: 5px 20px 10px 20px;
 
         ul {
             // border: 1px solid rebeccapurple;
             list-style-type: disc;
-            padding-left: 30px;
+            padding-left: 20px;
         }
     }
 
 }
-
-// aside {
-//     // border: 1px solid red;
-//     width: calc(25% + 20px);
-
-//     img {
-//         box-shadow: -20px 20px $quaternary;
-//         margin-left: 20px;
-//     }
-    
-//     .textContainer {
-//         background-color: $quaternary;
-//         border: 20px solid $quaternary;
-
-//         ul.aside {
-//             list-style-type: disc;
-//             margin-left: 20px;
-//         }
-//     }
-
-// }

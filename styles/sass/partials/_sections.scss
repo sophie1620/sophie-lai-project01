@@ -11,7 +11,8 @@ section {
 }
 
 .materials .textContainer {
-    flex: 1 2 66.6%;
+    flex: 1 3 66.6%;
+    padding-right: 50px;
 }
 
 .materials .imgContainer {
@@ -113,7 +114,7 @@ ul.gallery {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // border: 1px solid red;
+    // border: 1px solid red; 
     background-color: $secondary;
     padding: 20px 0 0 0;
 }
@@ -176,13 +177,15 @@ ul.gallery {
 /* styling for contact page */
 section.contact {
     background-color: $secondary;
-    height: calc(100% - 65vh);
-    padding: 0;
+    // background-size: 100%;
+    // height: 100vh;
+    // padding: 0;
     .wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 80px;
+        // padding-top: 80px;
+        // border: 1px solid blue;
     }
 }
 

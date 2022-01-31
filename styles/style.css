@@ -1056,6 +1056,11 @@ header.blogHeader {
     line-height: 1.8rem;
   }
 
+  h4 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
   p.bodyText {
     font-size: 0.9rem;
     line-height: 1.2rem;
@@ -1160,9 +1165,84 @@ header.blogHeader {
 
   .contact .textContainer {
     padding-top: 60px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact .textContainer ul {
+    margin: 0 auto 1rem;
+    width: 100%;
   }
 
   /* styling for blog.html */
+  .blogMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .blogPost {
+    width: 100vw;
+  }
+  .blogPost .blueCouch {
+    width: 60%;
+    margin: 20px auto 20px;
+  }
+  .blogPost .wrapper {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  article {
+    background-color: #E0FDDF;
+    border: none;
+  }
+  article .wrapper .textContainer {
+    background-color: #F5F5F5;
+    padding: 35px;
+    -webkit-box-shadow: 10px 10px #F8FB05;
+            box-shadow: 10px 10px #F8FB05;
+  }
+
+  aside {
+    width: 60vw;
+    margin: 0 auto;
+    position: relative;
+    top: -1150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  aside .imgContainer {
+    padding-bottom: 35px;
+    width: 20vw;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+  }
+  aside .imgContainer img {
+    margin: 0 auto;
+  }
+  aside .textContainer p + h4 {
+    text-align: right;
+    padding-right: 30px;
+  }
+  aside .textContainer ul {
+    padding-left: 50%;
+  }
+  aside .textContainer ul li {
+    font-size: 0.8rem;
+  }
+
+  section.comments,
+section.commentForm {
+    position: relative;
+    bottom: -400px;
+  }
 }
 /* end of max-width 810px */
 @media (max-width: 320px) {

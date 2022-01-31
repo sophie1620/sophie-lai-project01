@@ -70,6 +70,11 @@
         line-height: 1.8rem;
     }
 
+    h4 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
     p {
         &.bodyText {
             font-size: 0.9rem;
@@ -166,13 +171,93 @@
 
     .contact .textContainer {
         padding-top: 60px;
+        margin: 0 auto;
+        text-align: center;
+
+        ul {
+            margin: 0 auto 1rem;
+            width: 100%;
+        }
     }
 
     /* styling for blog.html */
+    .blogMain {
+        flex-direction: column;
+    }
+
+    .blogPost {
+        width: 100vw;
+
+        .blueCouch {
+            width: 60%;
+            margin: 20px auto 20px;
+        }
+
+        .wrapper {
+            width: 80vw;
+            // border: 1px solid green;
+            margin: 0 auto;
+        }
+    }
+
+    article {
+        background-color: $secondary;
+        border: none;
+
+        .wrapper .textContainer {
+            background-color: $primary;
+            padding: 35px;
+            box-shadow: 10px 10px $quaternary;
+        }
+    }
+
+    aside {
+        width: 60vw;
+        // border: 1px solid red;
+        margin: 0 auto;
+        position: relative;
+        top: -1150px;
+        display: flex;
+        flex-direction: row;
+
+        .imgContainer {
+            // border: 1px solid blue;
+            padding-bottom: 35px;
+            width: 20vw;
+            margin: 0 auto;
+            position: absolute;
+            bottom:0 ;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        .textContainer {
+            p + h4 {
+                text-align: right;
+                padding-right: 30px;
+            }
+            ul { 
+                padding-left: 50%;
+                li {
+                    font-size: 0.8rem;
+                    // padding-top: 0;
+                }
+            }
+        }
+    }
+
+    section.comments, 
+    section.commentForm {
+        // border: 1px solid pink;
+        position: relative;
+        bottom: -400px;
+    }
 
 } /* end of max-width 810px */
 
-
+// @media (max-width: )
 
 
 

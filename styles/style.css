@@ -309,7 +309,6 @@ p.bodyText {
   margin-bottom: 30px;
 }
 p.date {
-  text-transform: uppercase;
   font-weight: 700;
 }
 p span.author {
@@ -516,12 +515,25 @@ header.blogHeader .wrapper nav {
 .blogHeader h1 {
   font-family: "Kumar One", cursive;
   width: 25%;
-  margin-top: 15px;
 }
 
 .contactHeader h2,
 .blogHeader h2 {
-  margin-top: 100px;
+  margin-top: 4vh;
+}
+
+.contactHeader .wrapper .menu,
+.blogHeader .wrapper .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .blogMain {
@@ -994,8 +1006,11 @@ footer p.bodyText {
 
 @media (max-width: 1400px) {
   /* styling for header in contact.html and blog.html */
-  header.contactHeader,
-header.blogHeader {
+  header.contactHeader {
+    height: 80vh;
+  }
+
+  header.blogHeader {
     height: 45vh;
   }
 
@@ -1013,8 +1028,11 @@ header.blogHeader {
     bottom: 0;
   }
 
-  header.contactHeader,
-header.blogHeader {
+  header.contactHeader {
+    height: 60vh;
+  }
+
+  header.blogHeader {
     height: 40vh;
   }
 
@@ -1048,7 +1066,12 @@ header.blogHeader {
   ul.navBar {
     width: 40vw;
   }
+
+  header.contactHeader {
+    height: 50vh;
+  }
 }
+/* end of max-width 950px */
 @media (max-width: 810px) {
   section {
     padding: 60px 0 60px 0;
@@ -1137,10 +1160,8 @@ header.blogHeader {
   input[type=checkbox]:hover + label, input[type=checkbox]:focus + label {
     border: 1px dotted #F8FB05;
   }
-  input[type=checkbox] h1 {
-    display: inline-block;
-  }
 
+  /* styling for header in index.html */
   header img {
     width: 50%;
     bottom: 0;
@@ -1210,7 +1231,7 @@ header.blogHeader {
   /* header styling for contact.html and blog.html */
   header.contactHeader,
 header.blogHeader {
-    height: 30vh;
+    height: 45vh;
   }
 
   /* styling for contact.html */
@@ -1273,7 +1294,7 @@ header.blogHeader {
   }
 
   aside {
-    width: 60vw;
+    width: 60%;
     margin: 0 auto;
     position: relative;
     top: -1150px;
@@ -1296,8 +1317,9 @@ header.blogHeader {
     margin: 0 auto;
   }
   aside .textContainer p + h4 {
-    text-align: right;
-    padding-right: 30px;
+    width: 100%;
+    text-align: center;
+    padding-left: 40%;
   }
   aside .textContainer ul {
     padding-left: 50%;
@@ -1318,19 +1340,277 @@ section.commentForm {
     font-size: 2rem;
     width: 50vw;
   }
+
+  header.blogHeader {
+    height: 30vh;
+  }
 }
+@media (max-width: 760px) {
+  header.contactHeader {
+    height: 40vh;
+  }
+
+  .blogPost .wrapper {
+    width: 90%;
+  }
+
+  aside {
+    width: 80%;
+  }
+  aside .textContainer {
+    width: 80%;
+    top: -1300px;
+    margin: 0 auto;
+  }
+  aside .textContainer p {
+    font-size: 0.8rem;
+  }
+  aside .textContainer p + h4 {
+    padding-right: 80px;
+  }
+}
+/* end of max-width 760px */
+@media (max-width: 680px) {
+  /* styling for blog.html */
+  aside {
+    width: 80%;
+  }
+  aside .textContainer {
+    width: 100%;
+    top: -1300px;
+  }
+
+  ul.aside li {
+    line-height: 1.2rem;
+  }
+
+  section.comments,
+section.commentorm {
+    bottom: -350px;
+  }
+}
+@media (max-width: 550px) {
+  /* typography */
+  h1 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  p.bodyText, p.date,
+p span.author {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  a.findOutMore,
+a.moreInfo,
+button {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+
+  /* styling for index.html */
+  .materials .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .materials .wrapper .textContainer,
+.materials .wrapper .imgContainer {
+    width: 100%;
+  }
+  .materials .wrapper .textContainer {
+    padding: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .materials .wrapper .imgContainer {
+    position: static;
+  }
+  .materials .wrapper .imgContainer img {
+    position: static;
+    margin: 0 auto;
+  }
+
+  ul.gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul.gallery li {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+  ul.gallery li img {
+    padding: 0;
+  }
+
+  .links .wrapper li {
+    width: 100%;
+  }
+  .links .wrapper li h3 {
+    text-align: left;
+  }
+
+  .linksContainer {
+    margin: 20px;
+  }
+
+  .linksContainer p {
+    padding-left: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .locations {
+    padding-bottom: 50px;
+  }
+
+  /* styling for contact.html */
+  .contact form {
+    width: 90%;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 0.7rem;
+  }
+
+  ::-moz-placeholder {
+    font-size: 0.7rem;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+
+  ::-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+
+  ::placeholder {
+    font-size: 0.7rem;
+  }
+
+  /* styling for blog.html */
+  aside {
+    top: -1300px;
+  }
+  aside .textContainer ul {
+    padding-left: 30%;
+  }
+
+  section.comments,
+section.commentForm {
+    bottom: -350px;
+  }
+
+  .commentContainer h3 {
+    text-align: center;
+  }
+
+  .commentContainer .commentPost {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .commentContainer .commentPost .textContainer {
+    padding: 0;
+    text-align: center;
+  }
+}
+/* end of max-width 550px */
 @media (max-width: 320px) {
+  /* typography */
+  h1 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
   h2 {
     font-size: 1.2rem;
     line-height: 1.5rem;
     padding-left: 0;
     position: relative;
     bottom: 3rem;
-    background-color: rgba(245, 245, 245, 0.8);
     padding: 10px;
   }
 
+  h3 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+  p.bodyText, p.date,
+p span.author {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+
   header img {
-    bottom: 0px;
+    bottom: 70px;
+  }
+
+  header.homeHeader {
+    height: 22vh;
+  }
+
+  /* styling for index.html */
+  .links .wrapper li h3 {
+    text-align: center;
+    font-size: 0.9;
+  }
+  .links .wrapper li h3 .icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* styling for contact.html */
+  form.messageForm {
+    padding: 10px;
+  }
+
+  /* styling for blog.html */
+  aside .textContainer h4 {
+    margin: 10px;
+  }
+
+  section.comments,
+section.commentForm {
+    bottom: -400px;
   }
 }

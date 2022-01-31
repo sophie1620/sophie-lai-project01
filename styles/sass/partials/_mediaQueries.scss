@@ -3,7 +3,10 @@
 
 @media (max-width: 1400px) {
     /* styling for header in contact.html and blog.html */
-    header.contactHeader,
+    header.contactHeader {
+        height: 80vh;
+    }
+
     header.blogHeader {
         height: 45vh;
     }
@@ -23,7 +26,10 @@
         bottom: 0;
     }
 
-    header.contactHeader, 
+    header.contactHeader {
+        height: 60vh;
+    } 
+
     header.blogHeader {
         height: 40vh;
     }
@@ -56,7 +62,11 @@
     ul.navBar {
         width: 40vw;
     }
-}
+
+    header.contactHeader {
+        height: 50vh;
+    }
+} /* end of max-width 950px */
 
 @media (max-width: 810px) {
     section {
@@ -135,6 +145,7 @@
         &:focus + label {
             border: 1px dotted $quaternary;
         }
+    }
     
         /* styling for header in index.html */
     header img {
@@ -200,7 +211,7 @@
     /* header styling for contact.html and blog.html */
     header.contactHeader, 
     header.blogHeader {
-        height: 30vh;
+        height: 45vh;
     }
 
     /* styling for contact.html */
@@ -284,9 +295,11 @@
 
         .textContainer {
             p + h4 {
-                text-align: right;
-                padding-right: 30px;
+                width: 100%;
+                text-align: center;
+                padding-left: 40%;
             }
+
             ul { 
                 padding-left: 50%;
                 li {
@@ -311,22 +324,209 @@
         font-size: 2rem;
         width: 50vw;
     }
+
+    header.blogHeader {
+        height: 30vh;
+    }
 }
 
 @media (max-width: 760px) {
+    header.contactHeader {
+        height: 40vh;
+    }
+    
     .blogPost .wrapper {
         width: 90%;
     }
 
-    aside .textContainer {
+    aside {
         width: 80%;
-        top: -1300px;
+
+        .textContainer {
+            width: 80%;
+            top: -1300px;
+            margin: 0 auto;
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            p + h4 {
+                padding-right: 80px;
+            }
+        }
+    }
+} /* end of max-width 760px */
+
+@media (max-width: 680px) {
+    /* styling for blog.html */
+    aside {
+        width: 80%;
+
+        .textContainer {
+            width: 100%;
+            top: -1300px;
+        }
+    }
+
+    ul.aside li {
+        line-height: 1.2rem;
+    }
+
+    section.comments, 
+    section.commentorm {
+        bottom: -350px;
     }
 }
 
-// @media (max-width: 640px) {
-//     .links 
-// }
+@media (max-width: 550px) {
+    /* typography */
+    h1 {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+
+        &.bodyText, 
+        &.date, 
+        span.author {
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+        }
+    }
+
+    a.findOutMore, 
+    a.moreInfo, 
+    button {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+
+    /* styling for index.html */
+    .materials .wrapper {
+    flex-direction: column-reverse;
+    // border: 1px solid red;
+
+        .textContainer, 
+        .imgContainer {
+            width: 100%;
+
+        }
+
+        .textContainer {
+            padding: 0;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .imgContainer {
+            position: static;
+            // margin-bottom: 45px;
+
+            img {
+                position: static;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    ul.gallery {
+        flex-direction: column;
+
+        li {
+            width: 90%;
+            margin: 0 auto;
+            // border: 1px solid green;
+            padding: 5%;
+
+            img {
+                padding: 0;
+            }
+        }
+    }
+
+    .links .wrapper {
+        li {
+            width: 100%;
+
+            h3 {
+                text-align: left;
+            }
+        }
+    }
+    .linksContainer {
+        margin: 20px;
+    }
+
+    .linksContainer p {
+        padding-left: 0;
+        width: 90%;
+        margin: 0 auto;
+        // border: 1px solid red;
+    }
+
+    .locations {
+        padding-bottom: 50px;
+    }
+
+    /* styling for contact.html */
+    .contact form {
+        width: 90%;
+    }
+
+    ::placeholder {
+        font-size: 0.7rem;
+    }
+
+    /* styling for blog.html */
+    aside {
+        top: -1300px;
+
+        .textContainer {
+            ul {
+                padding-left: 30%;
+            }
+        }
+    }
+
+    section.comments, 
+    section.commentForm {
+        bottom: -350px;
+    }
+
+    .commentContainer h3 {
+        text-align: center;
+    }
+
+    .commentContainer .commentPost {
+        flex-direction: column;
+        align-items: center;
+
+        .textContainer {
+            padding: 0;
+            text-align: center;
+        }
+    }
+    
+} /* end of max-width 550px */
 
 @media (max-width: 320px) {
     /* typography */
@@ -341,13 +541,71 @@
         padding-left: 0;
         position: relative;
         bottom: 3rem;
-        background-color: rgba($color: $primary, $alpha: 0.8);
         padding: 10px;
     }
 
+    h3 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+
+        &.bodyText, 
+        &.date, 
+        span.author {
+            font-size: 0.7rem;
+            line-height: 0.9rem;
+        }
+    }
+
     header img {
-        bottom: 0px;
+        bottom: 70px;
     }  
 
+    header.homeHeader {
+        height: 22vh;
+    }
+
+    /* styling for index.html */
+
+    .links .wrapper {
+        li {
+            h3 {
+                // it won't let me select h3 any other way..
+                text-align: center;
+                font-size: 0.9;
+
+                .icon {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    /* styling for contact.html */
+    form.messageForm {
+        padding: 10px;
+    }
+
+    /* styling for blog.html */
+    aside  .textContainer {
+        h4 {
+            margin: 10px;
+        }
+    }
+
+    section.comments, 
+    section.commentForm {
+        bottom: -400px;
+    }
+
 }
-// 

@@ -4,10 +4,11 @@ section {
 
 /* styling for home page */
 /* .materials section styling */
-.materials .wrapper{
+.materials .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    // border: 1px solid red;
 }
 
 .materials .textContainer {

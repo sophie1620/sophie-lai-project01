@@ -83,10 +83,17 @@ header.blogHeader .wrapper nav {
 .blogHeader h1 {
     font-family: $headingFont;
     width: 25%;
-    margin-top: 15px;
+    // margin-top: 15px;
 }
 
 .contactHeader h2,
 .blogHeader h2 {
-    margin-top: 100px;
+    margin-top: 4vh;
+}
+
+.contactHeader .wrapper .menu, 
+.blogHeader .wrapper .menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }

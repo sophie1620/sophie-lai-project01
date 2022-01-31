@@ -425,7 +425,7 @@ header.homeHeader {
   margin-bottom: 50px;
 }
 
-header.homeHeader .wrapper nav {
+header.homeHeader .wrapper .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,6 +436,7 @@ header.homeHeader .wrapper nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 100%;
 }
 
 ul.navBar {
@@ -446,7 +447,7 @@ ul.navBar {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 45%;
+  width: 35vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -460,8 +461,10 @@ ul.navBar {
 }
 
 h2 {
-  width: 50vw;
   padding-left: 12%;
+}
+h2 span {
+  display: block;
 }
 
 header img {
@@ -469,6 +472,10 @@ header img {
   left: 0;
   bottom: -50px;
   width: 55%;
+}
+
+.menuIcon {
+  display: none;
 }
 
 /* contact page background image styling */
@@ -1002,13 +1009,6 @@ header.blogHeader {
   }
 }
 @media (max-width: 1100px) {
-  /* styling for header */
-  .homeHeader h2 {
-    width: 60vw;
-    background-color: rgba(245, 245, 245, 0.8);
-    padding-top: 15px;
-  }
-
   header img {
     bottom: 0;
   }
@@ -1040,6 +1040,15 @@ header.blogHeader {
   }
 }
 /* end for max-width 1100px */
+@media (max-width: 950px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  ul.navBar {
+    width: 40vw;
+  }
+}
 @media (max-width: 810px) {
   section {
     padding: 60px 0 60px 0;
@@ -1049,6 +1058,7 @@ header.blogHeader {
   h2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
+    width: 60vw;
   }
 
   h3 {
@@ -1067,10 +1077,68 @@ header.blogHeader {
   }
 
   /* styling for index.html */
-  .homeHeader h2 {
-    width: 70%;
+  /* styling for menu icon and nav bar */
+  .menu {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu label.menuIcon,
+.menu input[type=checkbox] {
+    display: inline-block;
+    margin-top: 20px;
     background-color: rgba(245, 245, 245, 0.8);
-    padding-top: 15px;
+    padding: 10px;
+    border: 1px solid transparent;
+    height: 2.1rem;
+  }
+
+  .menu nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 20;
+    position: absolute;
+    right: -500px;
+    top: 45px;
+  }
+  .menu nav ul {
+    width: 160px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 20px;
+  }
+
+  input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+  }
+  input[type=checkbox]:checked ~ nav {
+    right: 0;
+  }
+  input[type=checkbox]:hover + label, input[type=checkbox]:focus + label {
+    border: 1px dotted #F8FB05;
+  }
+  input[type=checkbox] h1 {
+    display: inline-block;
   }
 
   header img {
@@ -1245,6 +1313,12 @@ section.commentForm {
   }
 }
 /* end of max-width 810px */
+@media (max-width: 780px) {
+  h2 {
+    font-size: 2rem;
+    width: 50vw;
+  }
+}
 @media (max-width: 320px) {
   h2 {
     font-size: 1.2rem;

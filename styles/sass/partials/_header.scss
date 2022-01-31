@@ -7,16 +7,17 @@ header.homeHeader {
     margin-bottom: 50px;
 }
 
-header.homeHeader .wrapper nav {
+header.homeHeader .wrapper .menu {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    width: 100%;
 }
 
 ul.navBar {
     display: flex;
     flex-direction: row;
-    width: 45%;
+    width: 35vw;
     justify-content: space-between;
 } 
 
@@ -29,9 +30,12 @@ ul.navBar {
 }
 
 h2 {
-    width: 50vw;
+    // width: 50vw;
     padding-left: 12%;
     // border: 1px solid red;
+    span {
+        display: block;
+    }
 }
 
 header img {
@@ -39,6 +43,10 @@ header img {
     left: 0;
     bottom: -50px;
     width: 55%;
+}
+
+.menuIcon {
+    display: none;
 }
 
 /* contact page background image styling */

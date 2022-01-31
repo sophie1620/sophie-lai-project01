@@ -1135,7 +1135,7 @@ footer p.bodyText {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     z-index: 20;
-    position: absolute;
+    position: fixed;
     right: -500px;
     top: 45px;
   }

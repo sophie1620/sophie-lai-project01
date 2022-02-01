@@ -1533,6 +1533,7 @@ button {
 }
 /* end of max-width 550px */
 @media (max-width: 414px) {
+  /* typography */
   h2 {
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -1540,6 +1541,17 @@ button {
     position: relative;
     bottom: 0rem;
     padding: 10px;
+  }
+
+  /* styling for contact.html */
+  section.locations {
+    padding-bottom: 135px;
+  }
+
+  /* styling for blog.html */
+  aside .textContainer ul.aside li {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
   }
 }
 /* end of max-width 414px ~for iPhone 11, 12, and 13 */
@@ -1552,12 +1564,7 @@ button {
   }
 
   h2 {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    padding-left: 0;
-    position: relative;
     bottom: 3rem;
-    padding: 10px;
   }
 
   h3 {
@@ -1626,11 +1633,6 @@ header.blogHeader {
   /* styling for blog.html */
   .comments .commentContainer .textContainer {
     padding-right: 0;
-  }
-
-  aside .textContainer ul.aside li {
-    font-size: 0.7rem;
-    line-height: 0.9rem;
   }
 }
 /* end of max-width 375px */

@@ -589,6 +589,13 @@ aside .textContainer ul {
   list-style-type: disc;
   padding-left: 20px;
 }
+aside .textContainer ul li {
+  border: 1px solid transparent;
+}
+aside .textContainer ul li a:hover,
+aside .textContainer ul li a:focus {
+  border: 1px dotted #065635;
+}
 
 section {
   padding: 80px 0 80px 0;
@@ -676,6 +683,16 @@ ul.gallery li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.links ul li .textContainer a:hover .linksContainer {
+  background-color: rgba(248, 251, 5, 0.5);
+}
+.links ul li .textContainer a:hover .linksContainer h3 .icon {
+  background-color: rgba(245, 245, 245, 0.8);
+  color: #065635;
+}
+.links ul li .textContainer a:focus {
+  border: 1px dotted #065635;
+}
 
 .icon {
   width: 3rem;
@@ -687,6 +704,9 @@ ul.gallery li {
   margin-right: 10px;
 }
 
+.linksContainer {
+  padding: 12px 0 5px;
+}
 .linksContainer p {
   padding-left: 4rem;
 }

@@ -54,6 +54,15 @@ aside {
             // border: 1px solid rebeccapurple;
             list-style-type: disc;
             padding-left: 20px;
+
+            li {
+                border: 1px solid transparent;
+            }
+
+            li a:hover, 
+            li a:focus {
+                border: 1px dotted $tertiary;
+            }
         }
     }
 

@@ -53,6 +53,20 @@ ul.gallery {
     width: calc(50% - 5px);
     display: flex;
     flex-direction: column;
+
+        .textContainer a:hover {
+            .linksContainer {
+                background-color: rgba($color: $quaternary, $alpha: 0.5);
+
+                h3 .icon {
+                    background-color: rgba($color: $primary, $alpha: 0.8);
+                    color: $tertiary;
+                }
+            }
+        }
+        .textContainer a:focus{
+            border: 1px dotted $tertiary;
+        }
     }
 }
 
@@ -66,8 +80,11 @@ ul.gallery {
     margin-right: 10px;
 }
 
-.linksContainer p {
-    padding-left: 4rem;
+.linksContainer {
+    padding: 12px 0 5px;
+    p {
+        padding-left: 4rem;
+    }
 }
 
 /* .programs section styling */

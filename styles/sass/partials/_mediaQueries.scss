@@ -167,9 +167,13 @@
     }
 
         /* styling .programs and .locations together */
+    section.programs {
+        padding-bottom: 0;
+    }
     .programs, 
     .locations {
         flex-direction: column;
+        // border: 1px solid red;
 
         .imgContainer {
             position: static;
@@ -183,6 +187,7 @@
 
             .textContainer {
                 text-align: center;
+                padding: 0;
             }
         }
     }
@@ -197,21 +202,21 @@
 
     .locations {
         flex-direction: column-reverse;
-        padding-top: 0;
-
-        .wrapper {
-            padding-bottom: 60px;
-        }
+        padding: 0 0 105px 0;
     }
 
     .banner {
         height: 40vh;
     }
 
-    /* header styling for contact.html and blog.html */
-    header.contactHeader, 
+    /* common styling for contact.html and blog.html */
+    header.contactHeader,
     header.blogHeader {
-        height: 45vh;
+        height: 35vh;
+    }
+
+    ::placeholder {
+        font-size: 0.9rem;
     }
 
     /* styling for contact.html */
@@ -221,7 +226,7 @@
 
     .contact form {
         position: static;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -254,7 +259,7 @@
         }
 
         .wrapper {
-            width: 80vw;
+            width: 90vw;
             // border: 1px solid green;
             margin: 0 auto;
         }
@@ -263,6 +268,7 @@
     article {
         background-color: $secondary;
         border: none;
+        margin-top: 60px;
 
         .wrapper .textContainer {
             background-color: $primary;
@@ -272,112 +278,55 @@
     }
 
     aside {
-        width: 60%;
+        width: 70%;
         // border: 1px solid red;
-        margin: 0 auto;
-        position: relative;
-        top: -1150px;
-        display: flex;
-        flex-direction: row;
+        margin: 0 auto 60px;
 
         .imgContainer {
-            // border: 1px solid blue;
-            padding-bottom: 35px;
             width: 20vw;
             margin: 0 auto;
-            position: absolute;
-            bottom:0 ;
 
             img {
                 margin: 0 auto;
+                box-shadow: 20px -20px $quaternary;
             }
         }
 
         .textContainer {
-            p + h4 {
-                width: 100%;
+            h4,
+            p {
                 text-align: center;
-                padding-left: 40%;
             }
 
-            ul { 
-                padding-left: 50%;
-                li {
-                    font-size: 0.8rem;
-                    // padding-top: 0;
-                }
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
-    }
-
-    section.comments, 
-    section.commentForm {
-        // border: 1px solid pink;
-        position: relative;
-        bottom: -400px;
     }
 
 } /* end of max-width 810px */
 
-@media (max-width: 780px ) {
-    h2 {
-        font-size: 2rem;
-        width: 50vw;
-    }
+// @media (max-width: 780px ) {
+//     h2 {
+//         font-size: 2rem;
+//         width: 50vw;
+//     }
 
-    header.blogHeader {
-        height: 30vh;
-    }
-}
+//     header.blogHeader {
+//         height: 30vh;
+//     }
+// }
 
 @media (max-width: 760px) {
-    header.contactHeader {
-        height: 40vh;
-    }
-    
-    .blogPost .wrapper {
-        width: 90%;
-    }
-
-    aside {
-        width: 80%;
-
-        .textContainer {
-            width: 80%;
-            top: -1300px;
-            margin: 0 auto;
-
-            p {
-                font-size: 0.8rem;
-            }
-
-            p + h4 {
-                padding-right: 80px;
-            }
-        }
+    header.contactHeader, 
+    header.blogHeader {
+        height: 30vh;
+        min-height: 300px;
+        /* ^ for horizontal mobile viewing*/
     }
 } /* end of max-width 760px */
-
-@media (max-width: 680px) {
-    /* styling for blog.html */
-    aside {
-        width: 80%;
-
-        .textContainer {
-            width: 100%;
-            top: -1300px;
-        }
-    }
-
-    ul.aside li {
-        line-height: 1.2rem;
-    }
-
-    section.comments, 
-    section.commentorm {
-        bottom: -350px;
-    }
-}
 
 @media (max-width: 550px) {
     /* typography */
@@ -387,7 +336,7 @@
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 2rem;
     }
 
@@ -470,6 +419,10 @@
             h3 {
                 text-align: left;
             }
+
+            p.bodyText {
+                padding-left: 60px;
+            }
         }
     }
     .linksContainer {
@@ -497,42 +450,27 @@
     }
 
     /* styling for blog.html */
-    aside {
-        top: -1300px;
-
-        .textContainer {
-            ul {
-                padding-left: 30%;
-            }
-        }
-    }
-
-    section.comments, 
-    section.commentForm {
-        bottom: -350px;
-    }
 
     .commentContainer h3 {
         text-align: center;
     }
 
     .commentContainer .commentPost {
-        flex-direction: column;
         align-items: center;
 
         .textContainer {
-            padding: 0;
-            text-align: center;
+            padding-left: 10px;
         }
     }
     
 } /* end of max-width 550px */
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
     /* typography */
     h1 {
         font-size: 0.8rem;
         line-height: 1rem;
+        padding-bottom: 30px;
     }
 
     h2 {
@@ -570,23 +508,78 @@
         bottom: 70px;
     }  
 
-    header.homeHeader {
-        height: 22vh;
+    /* styling for index.html */
+    section.materials {
+        padding-top: 0;
     }
 
+    section.links {
+        padding: 0;
+
+        .wrapper .textContainer h3 span {
+            display: block;
+            padding-left: 80px;
+        }
+    }
+
+    section.locations {
+        padding-bottom: 125px;
+    }
+
+    section.banner {
+        height: 20vh;
+    }
+
+    section.search {
+        padding-bottom: 0;
+    }
+
+    /* common styling for contact.html and blog.html */
+    header.contactHeader, 
+    header.blogHeader {
+        height: 20vh;
+    }
+
+    /* styling for contact.html */
+    form.messageForm {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    /* styling for blog.html */
+    .comments .commentContainer .textContainer {
+        padding-right: 0;
+    }
+
+    aside .textContainer ul.aside li {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+} /* end of max-width 375px */
+
+@media (max-width: 320px) {
     /* styling for index.html */
 
     .links .wrapper {
         li {
             h3 {
-                // it won't let me select h3 any other way..
                 text-align: center;
-                font-size: 0.9;
-
-                .icon {
-                    display: block;
-                    margin: 0 auto;
+                // padding: 10px;
+                span {
+                    // it won't let me select h3 any other way..
+                    padding-left: 0;
                 }
+            }
+
+            p.bodyText {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .icon {
+                display: block;
+                margin: 0 auto 10px;
             }
         }
     }
@@ -594,18 +587,14 @@
     /* styling for contact.html */
     form.messageForm {
         padding: 10px;
+
     }
 
     /* styling for blog.html */
-    aside  .textContainer {
-        h4 {
-            margin: 10px;
+    form.commentForm {
+        input[type="email"]::placeholder {
+            font-size: 0.5rem;
         }
     }
+} /* end of max-width 320px */
 
-    section.comments, 
-    section.commentForm {
-        bottom: -400px;
-    }
-
-}

@@ -1023,6 +1023,7 @@ footer p.bodyText {
     margin-left: 70px;
   }
 }
+/*end styling for max-width 1400px */
 @media (max-width: 1100px) {
   header img {
     bottom: 0;
@@ -1123,6 +1124,19 @@ footer p.bodyText {
     border: 1px solid transparent;
     height: 2.1rem;
   }
+  .menu .navBar li a {
+    border-bottom: 3px solid transparent;
+    margin: 5px;
+    padding: 0 5px;
+  }
+  .menu .navBar li a:hover {
+    border-bottom: 3px solid #F8FB05;
+    padding: 0 5px;
+    background-color: rgba(248, 251, 5, 0.5);
+  }
+  .menu .navBar li a:focus {
+    border: 1px dotted #065635;
+  }
 
   .menu nav {
     display: -webkit-box;
@@ -1157,8 +1171,9 @@ footer p.bodyText {
   input[type=checkbox]:checked ~ nav {
     right: 0;
   }
-  input[type=checkbox]:hover + label, input[type=checkbox]:focus + label {
-    border: 1px dotted #F8FB05;
+  input[type=checkbox]:focus + label {
+    border: 1px dotted #065635;
+    background-color: rgba(248, 251, 5, 0.5);
   }
 
   /* styling for header in index.html */

@@ -43,6 +43,13 @@ ul.gallery {
 }
 
 /* .links section styling */
+.linksContainer {
+    padding: 12px 0 5px;
+    p {
+        padding-left: 4rem;
+    }
+}
+
 .links ul {
     display: flex;
     flex-direction: row;
@@ -59,16 +66,19 @@ ul.gallery {
                 background-color: rgba($color: $quaternary, $alpha: 0.5);
 
                 h3 .icon {
-                    background-color: rgba($color: $primary, $alpha: 0.8);
-                    color: $tertiary;
+                    background-color: $primary
+                    // color: $tertiary;
                 }
             }
         }
-        .textContainer a:focus{
-            border: 1px dotted $tertiary;
+        .textContainer a:focus {
+            .linksContainer {
+                border: 1px dotted $tertiary;
+            }
         }
     }
 }
+
 
 .icon {
     width: 3rem;
@@ -80,12 +90,6 @@ ul.gallery {
     margin-right: 10px;
 }
 
-.linksContainer {
-    padding: 12px 0 5px;
-    p {
-        padding-left: 4rem;
-    }
-}
 
 /* .programs section styling */
 .programs {

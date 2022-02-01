@@ -659,6 +659,13 @@ ul.gallery li {
 }
 
 /* .links section styling */
+.linksContainer {
+  padding: 12px 0 5px;
+}
+.linksContainer p {
+  padding-left: 4rem;
+}
+
 .links ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -687,10 +694,9 @@ ul.gallery li {
   background-color: rgba(248, 251, 5, 0.5);
 }
 .links ul li .textContainer a:hover .linksContainer h3 .icon {
-  background-color: rgba(245, 245, 245, 0.8);
-  color: #065635;
+  background-color: #F5F5F5;
 }
-.links ul li .textContainer a:focus {
+.links ul li .textContainer a:focus .linksContainer {
   border: 1px dotted #065635;
 }
 
@@ -702,13 +708,6 @@ ul.gallery li {
   display: inline-block;
   border-radius: 50%;
   margin-right: 10px;
-}
-
-.linksContainer {
-  padding: 12px 0 5px;
-}
-.linksContainer p {
-  padding-left: 4rem;
 }
 
 /* .programs section styling */

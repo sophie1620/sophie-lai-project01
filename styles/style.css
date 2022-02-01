@@ -661,6 +661,7 @@ ul.gallery li {
 /* .links section styling */
 .linksContainer {
   padding: 12px 0 5px;
+  border: 1px solid transparent;
 }
 .linksContainer p {
   padding-left: 4rem;
@@ -696,7 +697,7 @@ ul.gallery li {
 .links ul li .textContainer a:hover .linksContainer h3 .icon {
   background-color: #F5F5F5;
 }
-.links ul li .textContainer a:focus .linksContainer {
+.links ul li .textContainer a:hover .linksContainer {
   border: 1px dotted #065635;
 }
 

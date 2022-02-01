@@ -112,6 +112,10 @@
             padding: 10px;
             border: 1px solid transparent;
             height: 2.1rem;
+
+            /* &:hover {
+            background-color: rgba($color: $quaternary, $alpha: 0.5);
+            } ~ I'm not too sure why I can't get this hover effect to work...*/
         }
 
         .navBar li a {

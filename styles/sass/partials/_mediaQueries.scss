@@ -473,6 +473,17 @@
     
 } /* end of max-width 550px */
 
+@media (max-width: 414px) {
+    h2 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding-left: 0;
+        position: relative;
+        bottom: 0rem;
+        padding: 10px;
+    }
+} /* end of max-width 414px ~for iPhone 11, 12, and 13 */
+
 @media (max-width: 375px) {
     /* typography */
     h1 {

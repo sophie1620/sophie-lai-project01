@@ -52,14 +52,14 @@ form.commentForm {
     background-color: $secondary;
     // padding: 10px 50px 10px 0px;
     // margin-right: 0;
-
+    
     .nameEmail {
         width: 100%;
         // border: 1px solid red;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        
         input {
             width: 48%;
             border: none;
@@ -68,6 +68,12 @@ form.commentForm {
             background-color: $secondary;
             margin-bottom: 50px;
         }
+    }
+
+    p.blogThnkUMsg {
+        background-color: $primary;
+        padding: 80px 50px 50px 50px;
+        box-shadow: 20px 20px $quaternary;
     }
 }
 

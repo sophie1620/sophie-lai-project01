@@ -315,6 +315,11 @@ p span.author {
   font-style: italic;
   font-weight: 700;
 }
+p.thnx {
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
 
 a {
   text-decoration: none;
@@ -1006,6 +1011,12 @@ form.commentForm .nameEmail input {
   padding: 15px 10px 15px 10px;
   background-color: #E0FDDF;
   margin-bottom: 50px;
+}
+form.commentForm p.blogThnkUMsg {
+  background-color: #F5F5F5;
+  padding: 80px 50px 50px 50px;
+  -webkit-box-shadow: 20px 20px #F8FB05;
+          box-shadow: 20px 20px #F8FB05;
 }
 
 .commentForm textarea {

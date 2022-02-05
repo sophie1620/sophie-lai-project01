@@ -67,6 +67,11 @@ p {
         font-style: italic;
         font-weight: 700;
     }
+    &.thnx {
+        line-height: 1.6rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+    }
 }
 
 a {
@@ -115,3 +120,7 @@ ul.aside li {
     letter-spacing: 0.1rem;
     margin-top: 0;
 }
+
+// .commentForm p.blogThnkUMsg {
+//     text-align: center;
+// }

@@ -901,7 +901,7 @@ section.comments {
           justify-content: space-between;
 }
 .commentContainer .commentPost .imgContainer {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .commentContainer .commentPost .textContainer {
   -ms-flex-preferred-size: 80%;

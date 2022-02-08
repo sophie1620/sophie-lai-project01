@@ -27,20 +27,9 @@ function closeIcon(iconUpdate) {
 
     // 1. identify/target the item
 const formElement = document.querySelector('form');
-    // console.log(messageSubmission);
+    console.log(formElement);
 
-    // we want to make sure all sections are completed, so we need to ensure input values are true. So, we target the parent, and then find the value and ensure that the value is true
-    const userName = document.getElementById('name');
-    // console.log(userName);
-    const name = userName.value;
-    // console.log(name);
-
-    const userEmail = document.getElementById('email');
-    const email = userEmail.value;
-
-    const userMessage = document.querySelector('textarea');
-    // console.log(userMessage);
-    const message = userMessage.value;
+const commentFormElement = document.querySelectorAll('.commentForm');
 
 // begin selecting target elements to append comment onto the comment section
     const ulElement = document.getElementById('commentContainer');
@@ -52,36 +41,50 @@ const formElement = document.querySelector('form');
 formElement.addEventListener('submit', function(e){
     e.preventDefault();
     // when the user clicks submit, we need to run method to allow the html to be changed
+
+    const userName = document.getElementById('name');
+    // console.log(userName);
+    const name = userName.value;
+    // console.log(name);
+
+    const userEmail = document.getElementById('email');
+    const email = userEmail.value;
+
+    const userMessage = document.querySelector('textarea');
+    // console.log(userMessage);
+    const message = userMessage.value;
     
+    // we want to make sure all sections are completed, so we need to ensure input values are true. So, we target the parent, and then find the value and ensure that the value is true
     if (name && email && message) {
         formElement.innerHTML = '<p class="thnx blogThnkUMsg">Thank you for the submission!</p>';
 
         // appending comment into comment part of blog.html (but I don't know how to add picture or the date of comment posting)
-        const textDivElement = document.createElement('div');
-        textDivElement.className = "textContainer";
-
-        const imgDivElement = document.createElement('div');
-        imgDivElement.className = "imgContainer";
-
-        const listElement = document.createElement('li');
-        // console.log(listElement);
-        listElement.className = "commentPost";
-
-        const paragraphElement = document.createElement('p');
-        paragraphElement.className = "bodyText";
-
-        paragraphElement.textContent = message;
-            console.log(paragraphElement.textContent);
-        
-        textDivElement.appendChild(paragraphElement);
+        if (commentFormElement) {
+            const textDivElement = document.createElement('div');
+            textDivElement.className = "textContainer";
+            
+            const imgDivElement = document.createElement('div');
+            imgDivElement.className = "imgContainer";
+            
+            const listElement = document.createElement('li');
+            // console.log(listElement);
+            listElement.className = "commentPost";
+            
+            const paragraphElement = document.createElement('p');
+            paragraphElement.className = "bodyText";
+            
+            paragraphElement.textContent = message;
+            // console.log(paragraphElement.textContent);
+            
+            textDivElement.appendChild(paragraphElement);
             // console.log('listElement');
+            
+            listElement.appendChild(imgDivElement);
+            listElement.appendChild(textDivElement);
+            
+            ulElement.appendChild(listElement);
+        }
 
-        listElement.appendChild(imgDivElement);
-        listElement.appendChild(textDivElement);
-
-        ulElement.appendChild(listElement);
-
-        // commentSection.append(ulElement);
         
     } else {
         alert("Please complete the form.");

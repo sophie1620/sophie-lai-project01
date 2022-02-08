@@ -696,11 +696,9 @@ ul.gallery li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.links ul li .textContainer a:hover .linksContainer {
-  background-color: rgba(248, 251, 5, 0.5);
-}
 .links ul li .textContainer a:hover .linksContainer h3 .icon {
-  background-color: #F5F5F5;
+  background-color: #065635;
+  color: #F5F5F5;
 }
 .links ul li .textContainer a:hover .linksContainer {
   border: 1px dotted #065635;

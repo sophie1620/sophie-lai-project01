@@ -64,11 +64,9 @@ ul.gallery {
 
         .textContainer a:hover {
             .linksContainer {
-                background-color: rgba($color: $quaternary, $alpha: 0.5);
-
                 h3 .icon {
-                    background-color: $primary
-                    // color: $tertiary;
+                    background-color: $tertiary;
+                    color: $primary;
                 }
             }
         }

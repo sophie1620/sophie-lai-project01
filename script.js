@@ -27,11 +27,11 @@ function closeIcon(iconUpdate) {
 
     // 1. identify/target the item
 const formElement = document.querySelector('form');
-    console.log(formElement);
+    // console.log(formElement);
 
-const commentFormElement = document.querySelectorAll('.commentForm');
+const commentPostingSection = document.querySelector('.comments');
 
-// begin selecting target elements to append comment onto the comment section
+// // begin selecting target elements to append comment onto the comment section
     const ulElement = document.getElementById('commentContainer');
     // console.log(ulElement);
 
@@ -59,7 +59,7 @@ formElement.addEventListener('submit', function(e){
         formElement.innerHTML = '<p class="thnx blogThnkUMsg">Thank you for the submission!</p>';
 
         // appending comment into comment part of blog.html (but I don't know how to add picture or the date of comment posting)
-        if (commentFormElement) {
+        if (commentPostingSection) {
             const textDivElement = document.createElement('div');
             textDivElement.className = "textContainer";
             
@@ -84,9 +84,8 @@ formElement.addEventListener('submit', function(e){
             
             ulElement.appendChild(listElement);
         }
-
-        
     } else {
         alert("Please complete the form.");
     } 
 });
+
